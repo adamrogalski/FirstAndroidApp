@@ -1,0 +1,65 @@
+<!--
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenuActivity">
+
+</android.support.constraint.ConstraintLayout>
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:clipToPadding="false"
+    tools:context=".InfoPozActivity"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/pzn_info"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/poznan_info" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/pzn_info"
+        android:layout_centerHorizontal="true"
+        android:background="#70ffffff"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/info_poznan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Miasto w województwie wielkopolskim. Liczba mieszkańców ok. 540 tys. Położone na wysokości 50 - 150 m n. p. m."
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/info_poznan_web"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/info_poznan"
+            android:layout_centerHorizontal="true"
+            android:autoLink="web"
+            android:text="@string/pzn_web"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+</RelativeLayout>
+

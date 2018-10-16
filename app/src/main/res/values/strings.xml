@@ -1,0 +1,7 @@
+<resources>
+
+    <string name="app_name">Projekt magisterski</string>
+    <string name="ino_web">https://pl.wikipedia.org/wiki/Inowrocław</string>
+    <string name="pzn_web">https://pl.wikipedia.org/wiki/Poznań</string>
+
+</resources>
